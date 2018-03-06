@@ -1,0 +1,2 @@
+CMD="hostname && free -g && nproc"
+while read HOST; do ssh -n "$HOST" "$CMD"; done << serverlist.txt
